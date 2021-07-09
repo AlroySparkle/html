@@ -97,3 +97,7 @@
         margin-right: 15px;
     }
 }
+
+div.splitLine {
+    height: 10px;
+}

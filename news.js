@@ -1,23 +1,7 @@
-var rightArrow = document.getElementById("rightArrow");
-var leftArrow = document.getElementById("leftArrow");
-document.getElementById("rightArrow").offsetTop = screen.height * 0.7;
-document.getElementById("newImage").src = "\\sources\\newsImage\\1.png";
-document.getElementById("newImage").width = screen.width;
-document.getElementById("newImage").height = screen.height * 0.8;
-var num = 0;
+var b1, b2, b3
+b1 = document.getElementById("slider-image-1-js");
+b2 = document.getElementById("slider-image-2-js");
+b3 = document.getElementById("slider-image-3-js");
 
-rightArrow.onclick = function() {
-    num++;
-    document.getElementById("newImage").src = "\\sources\\newsImage\\" + (((Math.abs(num)) % 3) + 1) + ".png";
-    document.getElementById("newImage").width = screen.width;
-    document.getElementById("newImage").height = screen.height * 0.8;
-};
-
-leftArrow.onclick = function() {
-    num--;
-    if (num < 0)
-        num = 2;
-    document.getElementById("newImage").src = "\\sources\\newsImage\\" + ((num % 3) + 1) + ".png";
-    document.getElementById("newImage").width = screen.width;
-    document.getElementById("newImage").height = screen.height * 0.8;
-};
+setInterval(function() { b2.click(); }, 2000);
+setInterval(function() { b3.click(); }, 3000);
