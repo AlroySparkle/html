@@ -43,7 +43,7 @@ a.button {
     border-radius: 5%;
     text-decoration: none;
     color: white;
-    grid-row: 2/3;
+    grid-row: 3/4;
     grid-column: 2/3;
 }
 
@@ -62,9 +62,13 @@ h1.card-title {
     justify-self: center;
 }
 
-label.card-price {
-    font-size: 30px;
+div.card-info {
+    font-size: 20px;
     justify-self: center;
-    grid-row: 3/4;
+    grid-row: 2/3;
     grid-column: 1/4;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
