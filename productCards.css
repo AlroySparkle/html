@@ -51,6 +51,7 @@ span.platform::after {
 }
 
 button.wishlist-button {
+    padding: 5px;
     color: white;
     background-color: #f7ced7ff;
     transition: .2s;
@@ -59,5 +60,19 @@ button.wishlist-button {
 }
 
 button.wishlist-button:hover {
+    background-color: #feed99;
+}
+
+button.swap-product-button {
+    padding: 5px;
+    color: white;
+    background-color: #f7ced7ff;
+    transition: .2s;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button.swap-product-button:hover {
     background-color: #feed99;
 }
