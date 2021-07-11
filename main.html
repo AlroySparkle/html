@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="newsMainDesign.css">
     <link rel="stylesheet" href="sales.css">
     <link rel="stylesheet" href="productCards.css">
+    <link rel="stylesheet" href="upcoming.css">
     <script src="https://kit.fontawesome.com/ca5d4bd03e.js" crossorigin="anonymous"></script>
     <script src="products.js"></script>
 </head>
@@ -35,33 +36,31 @@
             <i class="fas fa-bars" id="hamburger"></i>
         </div>
     </div>
-    <!-----------------------------------------news------------------------------------------------>
-    <div class="slide-container">
-        <span id="slider-image-1"></span>
-        <span id="slider-image-2"></span>
-        <span id="slider-image-3"></span>
-        <div class="image-container">
-            <img src="sources/newsImage/3.png" class="slider-image">
-            <img src="sources/newsImage/1.png" class="slider-image">
-            <img src="sources/newsImage/2.png" class="slider-image">
+
+    <!-----------------------------------------upcoming------------------------------------------------------->
+    <div class="upcoming-container">
+        <div class="upcoming-information">
+            <div class="upcoming-head">UPCOMING</div>
+            <div class="upcoming-platform">PLATFORM</div>
+            <div class="upcoming-release">Ullamco adipisicing duis dolor sit anim in consequat deserunt laborum officia culpa deserunt cupidatat ipsum.</div>
+            <a href="#" class="upcoming-button">pre-order</a>
         </div>
-        <div class="button-container">
-            <a href="#slider-image-1" class="slider-button" id="slider-image-1-js"></a>
-            <a href="#slider-image-2" class="slider-button" id="slider-image-2-js"></a>
-            <a href="#slider-image-3" class="slider-button" id="slider-image-3-js"></a>
+        <div class="upcoming-image">
+            <img src="/sources/newsImage/2.png" alt="">
         </div>
     </div>
     <!-----------------------------------------products------------------------------------------------>
     <br>
-    <button onclick="swap()" class="swap-product-button">change products</button>
-    <br>
+    <hr size="3">
+    <div style="display:flex; align-items: center; justify-content: space-between; width: 17%;">
+        <h1 style="margin: 10px;">TOP SELLS</h1> <a href="#" class="see-more">see more</a></div>
     <div class="products-sell">
         <div class="product-container" id="product1">
             <a href="#" class="product-link">
                 <img height="150px" width="300px" src="/sources/newsImage/3.png" alt="card-sale">
             </a>
             <div class="date">00/00/0000</div>
-            <h2 class="product-title"><a href="#">the name of game</a></h2>
+            <h3 class="product-title"><a href="#">the name of game</a></h3>
             <label class="product-price">$10</label>
             <div class="contain-platform-button">
                 <span class="platform">support device</span>
@@ -73,7 +72,7 @@
                 <img height="150px" width="300px" src="/sources/newsImage/3.png" alt="card-sale">
             </a>
             <div class="date">00/00/0000</div>
-            <h2 class="product-title"><a href="#">the name of game</a></h2>
+            <h3 class="product-title"><a href="#">the name of game</a></h3>
             <label class="product-price">$10</label>
             <div class="contain-platform-button">
                 <span class="platform">support device</span>
@@ -85,7 +84,7 @@
                 <img height="150px" width="300px" src="/sources/newsImage/3.png" alt="card-sale">
             </a>
             <div class="date">00/00/0000</div>
-            <h2 class="product-title"><a href="#">the name of game</a></h2>
+            <h3 class="product-title"><a href="#">the name of game</a></h3>
             <label class="product-price">$10</label>
             <div class="contain-platform-button">
                 <span class="platform">support device</span>
@@ -97,55 +96,7 @@
                 <img height="150px" width="300px" src="/sources/newsImage/3.png" alt="card-sale">
             </a>
             <div class="date">00/00/0000</div>
-            <h2 class="product-title"><a href="#">the name of game</a></h2>
-            <label class="product-price">$10</label>
-            <div class="contain-platform-button">
-                <span class="platform">support device</span>
-                <button class="wishlist-button">wish list</button>
-            </div>
-        </div>
-        <div class="product-container" id="product5">
-            <a href="#" class="product-link">
-                <img height="150px" width="300px" src="/sources/newsImage/2.png" alt="card-sale">
-            </a>
-            <div class="date">00/00/0000</div>
-            <h2 class="product-title"><a href="#">the name of game</a></h2>
-            <label class="product-price">$10</label>
-            <div class="contain-platform-button">
-                <span class="platform">support device</span>
-                <button class="wishlist-button">wish list</button>
-            </div>
-        </div>
-        <div class="product-container" id="product6">
-            <a href="#" class="product-link">
-                <img height="150px" width="300px" src="/sources/newsImage/2.png" alt="card-sale">
-            </a>
-            <div class="date">00/00/0000</div>
-            <h2 class="product-title"><a href="#">the name of game</a></h2>
-            <label class="product-price">$10</label>
-            <div class="contain-platform-button">
-                <span class="platform">support device</span>
-                <button class="wishlist-button">wish list</button>
-            </div>
-        </div>
-        <div class="product-container" id="product7">
-            <a href="#" class="product-link">
-                <img height="150px" width="300px" src="/sources/newsImage/2.png" alt="card-sale">
-            </a>
-            <div class="date">00/00/0000</div>
-            <h2 class="product-title"><a href="#">the name of game</a></h2>
-            <label class="product-price">$10</label>
-            <div class="contain-platform-button">
-                <span class="platform">support device</span>
-                <button class="wishlist-button">wish list</button>
-            </div>
-        </div>
-        <div class="product-container" id="product8">
-            <a href="#" class="product-link">
-                <img height="150px" width="300px" src="/sources/newsImage/2.png" alt="card-sale">
-            </a>
-            <div class="date">00/00/0000</div>
-            <h2 class="product-title"><a href="#">the name of game</a></h2>
+            <h3 class="product-title"><a href="#">the name of game</a></h3>
             <label class="product-price">$10</label>
             <div class="contain-platform-button">
                 <span class="platform">support device</span>
@@ -153,12 +104,7 @@
             </div>
         </div>
     </div>
-    <script>
-        document.getElementById("product5").style.display = "none";
-        document.getElementById("product6").style.display = "none";
-        document.getElementById("product7").style.display = "none";
-        document.getElementById("product8").style.display = "none";
-    </script>
+
     <!-----------------------------------------best sold-------------------------------------------->
     <br>
     <div class="news-container">

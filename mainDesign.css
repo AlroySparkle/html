@@ -20,6 +20,13 @@
     margin-left: 30px;
 }
 
+hr {
+    width: 90%;
+    margin: auto;
+    background-color: #f7ced7ff;
+    border: none;
+}
+
 .logo img {
     content: url(/sources/images/Dream-Land-Logo.png);
     max-width: 200px;

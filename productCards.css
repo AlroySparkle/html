@@ -21,21 +21,21 @@ a.product-link:hover img {
     filter: grayscale(50%);
 }
 
-h2.product-title {
+h3.product-title {
     transition: .2s;
 }
 
-h2.product-title a {
+h3.product-title a {
     color: inherit;
     text-decoration: inherit;
 }
 
-h2.product-title:hover {
+h3.product-title:hover {
     color: #f7ced7ff
 }
 
 label.product-price {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -46,7 +46,25 @@ div.contain-platform-button {
 
 span.platform::after {
     content: ' ';
-    border-bottom: 4px solid #f7ced7ff;
+    width: 70%;
+    border-bottom: 3px solid #f7ced7ff;
+    display: block;
+}
+
+a.see-more {
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+}
+
+a.see-more:hover {
+    color: #feed99;
+}
+
+a.see-more::after {
+    content: ' ';
+    width: 75%;
+    border-bottom: 2px solid #f7ced7ff;
     display: block;
 }
 
