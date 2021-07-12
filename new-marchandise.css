@@ -1,0 +1,24 @@
+div.new-marchandise-container {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    margin-top: 20px;
+    position: relative;
+}
+
+img.new-marchandise-image {
+    height: 150px;
+    width: 700px;
+}
+
+div.new-symbol {
+    font-size: 20px;
+    position: absolute;
+    right: 25%;
+    top: -10px;
+    background-color: #ff4040;
+    padding: 10px;
+    border-radius: 30px;
+    transform: rotate(30deg);
+    color: #feed99;
+}
