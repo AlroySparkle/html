@@ -1,23 +1,28 @@
-function swap() {
-    var c1 = document.getElementById("product1");
-    if (window.getComputedStyle(c1).display === 'none') {
-        document.getElementById("product1").style.display = "grid";
-        document.getElementById("product2").style.display = "grid";
-        document.getElementById("product3").style.display = "grid";
-        document.getElementById("product4").style.display = "grid";
-        document.getElementById("product5").style.display = "none";
-        document.getElementById("product6").style.display = "none";
-        document.getElementById("product7").style.display = "none";
-        document.getElementById("product8").style.display = "none";
-    } else {
+var x = 1;
 
-        document.getElementById("product5").style.display = "grid";
-        document.getElementById("product6").style.display = "grid";
-        document.getElementById("product7").style.display = "grid";
-        document.getElementById("product8").style.display = "grid";
-        document.getElementById("product1").style.display = "none";
-        document.getElementById("product2").style.display = "none";
-        document.getElementById("product3").style.display = "none";
-        document.getElementById("product4").style.display = "none";
+function swap(direction) {
+    //left -1 right 1 for direction
+    x += direction;
+    if (x > 2) {
+        x = 0;
+    } else if (x < 0) {
+        x = 2
     }
+    document.getElementsByClassName("hide-product")[0].style.visibility = "visible";
+    document.getElementsByClassName("hide-product")[0].style.backgroundColor = "rgba(255,255,255,1)";
+    setTimeout(changeImages, 300);
+    //hide the div to not be a struggling click and hover
+    setTimeout(visibleHide, 500);
+}
+//used to rehide the div after finish
+function visibleHide() {
+    document.getElementsByClassName("hide-product")[0].style.visibility = "hidden";
+}
+
+function changeImages() {
+    var images = document.getElementsByClassName("product-image");
+    for (var image = 0; image < images.length; image++) {
+        images[image].src = "/sources/newsImage/" + (1 + x) + ".png";
+    }
+    document.getElementsByClassName("hide-product")[0].style.backgroundColor = "rgba(255,255,255,0)";
 }

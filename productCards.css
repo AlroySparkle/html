@@ -3,10 +3,15 @@ div.products-sell {
     overflow: hidden;
     flex-wrap: column wrap;
     justify-content: space-between;
+    position: relative;
+}
+
+div.products-sell:hover>.swap-button {
+    visibility: visible;
 }
 
 div.product-container {
-    margin: 20px;
+    margin: 25px;
     display: grid;
     row-gap: 10px;
     width: 300px;
@@ -15,6 +20,33 @@ div.product-container {
 a.product-link img {
     transition: .2s;
     border-radius: 5px;
+}
+
+div.hide-product {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: .2s;
+}
+
+button.swap-button {
+    background: rgba(0, 0, 0, .3);
+    height: 90%;
+    width: 1%;
+    position: absolute;
+    top: 5%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    visibility: hidden;
+}
+
+button.right-swap {
+    right: 0px;
 }
 
 a.product-link:hover img {

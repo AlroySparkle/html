@@ -9,8 +9,23 @@ div.contact-us-footer {
 
 .grid-contact-us {
     display: grid;
-    font-size: 15px;
     row-gap: 5px;
+}
+
+.fa {
+    font-size: 30px;
+}
+
+.phone {
+    font-size: 15px;
+}
+
+.address {
+    font-size: 15px;
+}
+
+.email {
+    font-size: 15px;
 }
 
 .social-media-contact-us {

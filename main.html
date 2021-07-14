@@ -58,9 +58,16 @@
     <div style="display:flex; align-items: center; justify-content: space-between; width: 17%;">
         <h1 style="margin: 10px;">TOP SELLS</h1> <a href="#" class="see-more">see more</a></div>
     <div class="products-sell">
+        <button onclick="swap(-1)" class="swap-button left-swap">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button onclick="swap(1)" class="swap-button right-swap">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="hide-product"></div>
         <div class="product-container" id="product1">
             <a href="#" class="product-link">
-                <img height="150px" width="300px" src="/sources/newsImage/3.png" alt="card-sale">
+                <img height="150px" width="300px" src="/sources/newsImage/3.png" alt="card-sale" class="product-image">
             </a>
             <div class="date">00/00/0000</div>
             <h3 class="product-title"><a href="#">the name of game</a></h3>
@@ -72,7 +79,7 @@
         </div>
         <div class="product-container" id="product2">
             <a href="#" class="product-link">
-                <img height="150px" width="300px" src="/sources/newsImage/3.png" alt="card-sale">
+                <img height="150px" width="300px" src="/sources/newsImage/3.png" alt="card-sale" class="product-image">
             </a>
             <div class="date">00/00/0000</div>
             <h3 class="product-title"><a href="#">the name of game</a></h3>
@@ -84,7 +91,7 @@
         </div>
         <div class="product-container" id="product3">
             <a href="#" class="product-link">
-                <img height="150px" width="300px" src="/sources/newsImage/3.png" alt="card-sale">
+                <img height="150px" width="300px" src="/sources/newsImage/3.png" alt="card-sale" class="product-image">
             </a>
             <div class="date">00/00/0000</div>
             <h3 class="product-title"><a href="#">the name of game</a></h3>
@@ -96,7 +103,7 @@
         </div>
         <div class="product-container" id="product4">
             <a href="#" class="product-link">
-                <img height="150px" width="300px" src="/sources/newsImage/3.png" alt="card-sale">
+                <img height="150px" width="300px" src="/sources/newsImage/3.png" alt="card-sale" class="product-image">
             </a>
             <div class="date">00/00/0000</div>
             <h3 class="product-title"><a href="#">the name of game</a></h3>
@@ -159,9 +166,7 @@
                 <a href="#" class="fa fa-linkedin"></a>
                 <a href="#" class="fa fa-instagram"></a>
             </div>
-            <div class="email-contact-us">
-                email: alroy.row2@gmail.com
-            </div>
+            <div class="email-contact-us">email: alroy.row2@gmail.com</div>
             <div class="phone">phone: +9665000000</div>
             <div class="address">DreamLand Inc. | Saudi Arabia, Ash Sharqiyah</div>
         </div>
