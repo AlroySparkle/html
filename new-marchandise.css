@@ -1,24 +1,31 @@
-div.new-marchandise-container {
+div.new-games-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: #f7ced7ff;
+}
+
+.new-game-container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    height: 150px;
-    margin-top: 20px;
-    position: relative;
 }
 
-img.new-marchandise-image {
-    height: 150px;
-    width: 700px;
+.new-game-image {
+    width: 75%;
+    height: 500px;
 }
 
-div.new-symbol {
-    font-size: 20px;
-    position: absolute;
-    right: 25%;
-    top: -10px;
-    background-color: #ff4040;
-    padding: 10px;
-    border-radius: 30px;
-    transform: rotate(30deg);
-    color: #feed99;
+.game-choice {
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+}
+
+.new-games-choices {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

@@ -10,22 +10,30 @@
     <script>
         var choicesArray = document.getElementsByClassName("game-choice");
 
-        function nameGameImageContainer(imageSource) {
+        function nameGameImageContainer(imageSource, index) {
             var mainImage = document.getElementsByClassName("new-game-image")[0];
             mainImage.src = imageSource;
+            removeBorders();
+            choicesArray[index].style.border = "solid";
+        }
+
+        function removeBorders() {
+            for (var index = 0; index < choicesArray.length; index++) {
+                choicesArray[index].style.border = "none";
+            }
         }
     </script>
 </head>
 
 <body>
     <div class="new-games-container">
-        <img src="/sources/images/Dream-Land-Logo.png" alt="" class="new-game-image">
+        <div class="new-game-container"><img src="/sources/images/Dream-Land-Logo.png" alt="" class="new-game-image"></div>
         <br><br>
         <div class="new-games-choices">
-            <img src="/sources/images/Dream-Land-Logo.png" alt="" class="new-game-choice1 game-choice" onclick="nameGameImageContainer('/sources/images/Dream-Land-Logo.png')">
-            <img src="/sources/images/Dream-Land-Logo2.png" alt="" class="new-game-choice2 game-choice" onclick="nameGameImageContainer('/sources/images/Dream-Land-Logo2.png')">
-            <img src="/sources/images/marchandise.png" alt="" class="new-game-choice3 game-choice" onclick="nameGameImageContainer('/sources/images/marchandise.png')">
-            <img src="/sources/images/Dream-Land-Logo.png" alt="" class="new-game-choice4 game-choice" onclick="nameGameImageContainer('/sources/images/Dream-Land-Logo.png')">
+            <img src="/sources/images/Dream-Land-Logo.png" alt="" class="new-game-choice1 game-choice" onclick="nameGameImageContainer('/sources/images/Dream-Land-Logo.png',0)">
+            <img src="/sources/images/Dream-Land-Logo2.png" alt="" class="new-game-choice2 game-choice" onclick="nameGameImageContainer('/sources/images/Dream-Land-Logo2.png',1)">
+            <img src="/sources/images/marchandise.png" alt="" class="new-game-choice3 game-choice" onclick="nameGameImageContainer('/sources/images/marchandise.png',2)">
+            <img src="/sources/images/Dream-Land-Logo.png" alt="" class="new-game-choice4 game-choice" onclick="nameGameImageContainer('/sources/images/Dream-Land-Logo.png',3)">
         </div>
     </div>
 </body>
