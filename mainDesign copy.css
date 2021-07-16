@@ -1,62 +1,23 @@
-div {
-    width: fit-content;
+div.new-games-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
 }
 
-div.upcoming-container {
-    color: white;
-    background-color: #f7ced7ff;
-    height: 500px;
+.new-game-image {
+    width: 100%;
+    height: 400px;
+}
+
+.game-choice {
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+}
+
+.new-games-choices {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-}
-
-div.upcoming-image {
-    height: 100%;
-    width: 66.7%;
-}
-
-div.upcoming-information {
-    padding-top: 10%;
-    height: 30%;
-    width: 15%;
-    display: grid;
-    padding-left: 11%;
-}
-
-div.upcoming-image img {
-    width: 100%;
-    max-height: 500px;
-}
-
-div.upcoming-head {
-    font-size: 50px;
-    margin-bottom: 5px;
-}
-
-div.upcoming-platform {
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
-div.upcoming-release {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-a.upcoming-button {
-    text-decoration: none;
-    font-size: 20px;
-    background-color: pink;
-    color: white;
-    width: fit-content;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 15px;
-}
-
-a.upcoming-button:hover {
-    border: 3px solid;
+    justify-content: center;
 }

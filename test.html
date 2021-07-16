@@ -7,18 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="mainDesign copy.css">
+    <script>
+        var choicesArray = document.getElementsByClassName("game-choice");
+
+        function nameGameImageContainer(imageSource) {
+            var mainImage = document.getElementsByClassName("new-game-image")[0];
+            mainImage.src = imageSource;
+        }
+    </script>
 </head>
 
 <body>
-    <div class="upcoming-container">
-        <div class="upcoming-information">
-            <div class="upcoming-head">UPCOMING</div>
-            <div class="upcoming-platform">PLATFORM</div>
-            <div class="upcoming-release">Ullamco adipisicing duis dolor sit anim in consequat deserunt laborum officia culpa deserunt cupidatat ipsum.</div>
-            <a href="#" class="upcoming-button">find out</a>
-        </div>
-        <div class="upcoming-image">
-            <img src="/sources/newsImage/2.png" alt="">
+    <div class="new-games-container">
+        <img src="/sources/images/Dream-Land-Logo.png" alt="" class="new-game-image">
+        <br><br>
+        <div class="new-games-choices">
+            <img src="/sources/images/Dream-Land-Logo.png" alt="" class="new-game-choice1 game-choice" onclick="nameGameImageContainer('/sources/images/Dream-Land-Logo.png')">
+            <img src="/sources/images/Dream-Land-Logo2.png" alt="" class="new-game-choice2 game-choice" onclick="nameGameImageContainer('/sources/images/Dream-Land-Logo2.png')">
+            <img src="/sources/images/marchandise.png" alt="" class="new-game-choice3 game-choice" onclick="nameGameImageContainer('/sources/images/marchandise.png')">
+            <img src="/sources/images/Dream-Land-Logo.png" alt="" class="new-game-choice4 game-choice" onclick="nameGameImageContainer('/sources/images/Dream-Land-Logo.png')">
         </div>
     </div>
 </body>
