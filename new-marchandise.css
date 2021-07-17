@@ -14,11 +14,13 @@ div.new-games-container {
 }
 
 .new-game-image {
+    border-radius: 25px;
     width: 75%;
     height: 500px;
 }
 
 .game-choice {
+    border-radius: 25px;
     width: 300px;
     height: 150px;
     margin: 20px;
