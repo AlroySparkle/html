@@ -14,6 +14,7 @@ div.new-games-container {
 }
 
 .new-game-image {
+    transition: .1s;
     border-radius: 25px;
     width: 75%;
     height: 500px;
