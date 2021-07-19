@@ -62,8 +62,80 @@ a.product-button {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 15px;
+    transition: .2s;
+}
+
+a.product-cart-button {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    width: fit-content;
+    transition: .2s;
+}
+
+a.product-cart-button:hover {
+    color: #feed99;
 }
 
 a.product-button:hover {
-    border: 3px solid;
+    color: #feed99;
+}
+
+div.product-review {
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+div.deliver-type {
+    background-color: grey;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    width: fit-content;
+}
+
+div.product-cart {
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .2);
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+div.product-comment {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+div.user-image {
+    width: 50px;
+    height: 50px;
+    background-image: url("/sources/images/batman.png");
+    background-size: contain;
+    border-radius: 100%;
+}
+
+div.user {
+    margin-left: 0px;
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+div.user-rate {
+    font-size: 15px;
+}
+
+div.user-name {
+    font-size: 18px;
+}
+
+div.user-comment {
+    font-size: 20px;
 }
