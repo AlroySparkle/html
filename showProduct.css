@@ -83,7 +83,7 @@ a.product-button:hover {
 
 div.product-review {
     display: grid;
-    grid-template-columns: 85% 15%;
+    grid-template-columns: 100%;
 }
 
 div.deliver-type {
@@ -94,10 +94,50 @@ div.deliver-type {
     width: fit-content;
 }
 
+.tags {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.tag {
+    color: white;
+    background-color: grey;
+    padding: 3px;
+    text-decoration: none;
+    margin: 2px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+div.information {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    row-gap: 20px;
+}
+
+div.information-from-publisher {
+    grid-column: 1/4;
+}
+
 div.product-cart {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .4);
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 5px;
+}
+
+img.image {
+    width: 33%;
+    height: auto;
+}
+
+div.buy-product {
     align-items: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, .2);
     font-size: 20px;
     color: white;
     padding: 20px;
