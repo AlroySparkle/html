@@ -31,6 +31,27 @@ div.product-data {
     padding-left: 11%;
 }
 
+.user-score {
+    display: flex;
+    column-gap: 3px;
+}
+
+.rate-button {
+    background-color: #f7ced7ff;
+    padding: 5px;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.rate-button>a:hover {
+    color: #feed99;
+}
+
 div.product-image img {
     width: 100%;
     max-height: 500px;
