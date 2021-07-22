@@ -36,16 +36,60 @@ div.product-data {
     column-gap: 3px;
 }
 
+
+/* display inheret once the user is login */
+
 .rate-button {
     background-color: #f7ced7ff;
     padding: 5px;
     color: white;
+    border-radius: 5px;
+    display: none;
 }
 
-a {
+a.rate {
     color: white;
     text-decoration: none;
     transition: .2s;
+}
+
+.write-comment {
+    resize: none;
+    width: 90%;
+}
+
+.save-comment {
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #f7ced7ff;
+    width: fit-content;
+    transition: .2s;
+}
+
+.save-comment:hover {
+    color: #feed99;
+}
+
+
+/* display none but when the user is login should be flex */
+
+.add-comment {
+    width: 100%;
+    justify-content: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-link {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    color: black;
+    text-decoration: none;
 }
 
 .rate-button>a:hover {
