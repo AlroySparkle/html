@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="setting.css">
+    <link rel="stylesheet" href="mainDesign.css">
+    <link rel="stylesheet" href="contactUs.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ca5d4bd03e.js" crossorigin="anonymous"></script>
+    <script>
+        var holder = 0;
+
+        function select(selected) {
+            switch (holder) {
+                case 0:
+                    document.getElementById("menu1").classList.remove("menu-selected");
+                    document.getElementById("setting1").classList.remove("setting-selected");
+                    break;
+                case 1:
+                    document.getElementById("menu2").classList.remove("menu-selected");
+                    document.getElementById("setting2").classList.remove("setting-selected");
+                    break;
+                case 2:
+                    document.getElementById("menu3").classList.remove("menu-selected");
+                    document.getElementById("setting3").classList.remove("setting-selected");
+                    break;
+            }
+            switch (selected) {
+                case 0:
+                    document.getElementById("menu1").classList.add("menu-selected");
+                    document.getElementById("setting1").classList.add("setting-selected");
+                    break;
+                case 1:
+                    document.getElementById("menu2").classList.add("menu-selected");
+                    document.getElementById("setting2").classList.add("setting-selected");
+                    break;
+                case 2:
+                    document.getElementById("menu3").classList.add("menu-selected");
+                    document.getElementById("setting3").classList.add("setting-selected");
+                    break;
+            }
+            holder = selected;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="select-container">
+            <div class="menu menu-selected" id="menu1" onclick="select(0)">Account</div>
+            <div class="menu" id="menu2" onclick="select(1)">Page</div>
+            <div class="menu" id="menu3" onclick="select(2)">security</div>
+        </div>
+        <div class="settings setting-selected" id="setting1">
+            <div class="user-information">
+                user information:
+                <div>username</div>
+                <input type="text">
+                <div>birth date</div>
+                <input type="date" name="" id="">
+            </div>
+            <div class="login-information">
+                login information:
+                <div>password</div>
+                <input type="password" name="" id="">
+                <div>new password</div>
+                <input type="password" name="" id="">
+                <div>repeat new password</div>
+                <input type="password" name="" id="">
+                <div>e-mail</div>
+                <input type="text">
+            </div>
+        </div>
+        <div class="settings" id="setting2"></div>
+        <div class="settings" id="setting3"></div>
+        <a href="#" class="mainPage">cancel</a>
+
+    </div>
+    <div class="contact-us-footer">
+        <div class="grid-contact-us">
+            <div class="copyright">&copy; DreamLand 2021 (not real)</div>
+            <div class="social-media-contact-us">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <div class="email-contact-us">email: alroy.row2@gmail.com</div>
+            <div class="phone">phone: +9665000000</div>
+            <div class="address">DreamLand Inc. | Saudi Arabia, Ash Sharqiyah</div>
+        </div>
+    </div>
+</body>
+
+</html>
