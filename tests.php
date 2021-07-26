@@ -11,19 +11,12 @@
     <title>Document</title>
     <script src="/html/sources/jquery.js"></script>
     <script src="/html/sources/jquery.session.js"></script>
-    <script>
-        $("document").ready(function(){
-            $("#click").click(function(){
-                $.post('tests2.php', {name:$("#hi").val(), password: $("#hi2").val()},function(data){
-                    window.location= "tests2.php";
-                })
-            });
-        });
-    </script>
+    <script src="/html/tests.js"></script>
 </head>
 <body>
     <input type="text" id="hi">
     <input type="text" id="hi2">
+    <div id = "err" style="color: red; display:none;">an error occur</div>
     <button id="click">any</button>
     
 </body>
