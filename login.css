@@ -38,3 +38,8 @@ button.login-button:hover {
 a.forget-password {
     font-size: 15px;
 }
+
+#err {
+    color: #f07470;
+    display: none;
+}

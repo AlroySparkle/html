@@ -1,3 +1,14 @@
+<?php
+    clearstatcache();
+    session_start();
+    if(isset($_SESSION["username"])){
+    }
+    else{
+    echo '<script>';
+        echo '$("cart-link").hide;';
+    echo '</script>';
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,6 +28,9 @@
     <script src="https://kit.fontawesome.com/ca5d4bd03e.js" crossorigin="anonymous"></script>
     <script src="products.js"></script>
     <script src="new-marchandise.js"></script>
+    <script src="/html/sources/jquery.js"></script>
+
+
 </head>
 
 <body>
@@ -34,7 +48,7 @@
             </ul>
         </div>
         <div class="icons">
-            <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            <a href="#" id="cart-link"><i class="fas fa-shopping-cart cart"></i></a>
         </div>
         <div class="hamburger">
             <i class="fas fa-bars" id="hamburger"></i>
