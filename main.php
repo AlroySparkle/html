@@ -1,13 +1,6 @@
 <?php
     clearstatcache();
     session_start();
-    if(isset($_SESSION["username"])){
-    }
-    else{
-    echo '<script>';
-        echo '$("cart-link").hide;';
-    echo '</script>';
-    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +41,16 @@
             </ul>
         </div>
         <div class="icons">
-            <a href="#" id="cart-link"><i class="fas fa-shopping-cart cart"></i></a>
+            <?php
+            if(isset($_SESSION["username"])){
+                echo '<a href="#" id="cart-link"><i class="fas fa-shopping-cart cart"></i></a>';
+                echo '<a href="settings.html" id="cart-link"><i class="fas fa-cog cart"></i></a>';
+            }
+            else{
+                echo '<a href="login.php" id="cart-link"><i class="fas fa-user cart"></i></a>';
+            }
+            ?>
+            
         </div>
         <div class="hamburger">
             <i class="fas fa-bars" id="hamburger"></i>
